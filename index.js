@@ -22,7 +22,7 @@ const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
     const db = client.db("tech-bazar-db");
     const usersCollection = db.collection("users");
     const productsCollection = db.collection("products");
